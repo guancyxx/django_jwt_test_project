@@ -38,7 +38,6 @@ services:
       - ./data/entrypoint.sh:/home/workspace/entrypoint.sh
       - ./data/supervisor_django.conf:/etc/supervisor/conf.d/supervisor_django.conf
       - ./data/uwsgi.ini:/data/uwsgi.ini
-      - ./data/log:/var/log
     depends_on:
       - redis
       - mariadb
